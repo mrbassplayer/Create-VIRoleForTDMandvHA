@@ -4,4 +4,4 @@ $vHAprivileges = Get-VIPrivilege |
           ($_.id -eq "HmsSession.com.vmware.vcHms.Session.Terminate") -or
           ($_.id -eq "StorageProfile.View")}
  
-new-virole -Name "Permissions for VMware TAM Data Collection and vHealth Analyzer2" -Privilege $vHAprivileges.name
+new-virole -Name "Permissions for VMware TAM Data Collection and vHealth Analyzer" -Privilege $vHAprivileges.name
